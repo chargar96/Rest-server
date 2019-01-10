@@ -10,5 +10,5 @@ if (process.env.NODE_ENV === 'dev') {
 } else{
     urlDB = 'mongodb://cafe-user:lkija8@ds115798.mlab.com:15798/cafe';
 }*/
-urlDB = 'mongodb://cafe-user:lkija8@ds115798.mlab.com:15798/cafe';
+urlDB = process.env.MONGO_URL;
 process.env.URLDB = urlDB;
